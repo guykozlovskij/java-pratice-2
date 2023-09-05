@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,14 +42,17 @@ public class Main {
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
 
-        int[][] multiDimensionArray = {{}};
-        multiDimensionArray[0][0] = 1;
-        System.out.println(Arrays.deepToString(multiDimensionArray));
+//        int[][] multiDimensionArray = {{}};
+//        multiDimensionArray[0][0] = 1;
+//        System.out.println(Arrays.deepToString(multiDimensionArray));
 
         //constant conventionally named in all caps
         final float PI = 3.14F;
 
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age:");
+        byte age2 = scanner.nextByte();
+        System.out.println("you are " + age2);
 
     }
 }
